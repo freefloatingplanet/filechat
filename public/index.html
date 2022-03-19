@@ -119,9 +119,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fa fa-send"></i></span>
                             </div>
-                            <form onsubmit="writeJson(); return false;">
-                            <input type="text" class="form-control" id="sendMessageField" placeholder="Enter text here...">
-                            </form>
+                            <input type="text" class="form-control" id="sendMessageField" placeholder="Enter text here..." onkeypress="writeJson();">
                         </div>
                     </div>
                 </div>

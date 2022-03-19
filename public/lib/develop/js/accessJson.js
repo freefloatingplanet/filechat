@@ -1,4 +1,5 @@
 let writeJson = function(){
+  if(window.event.keyCode === 13 && $('#sendMessageField').val()){ 
     $.ajax({
       type: "post",
       url:"/jsonwrite/",
@@ -10,6 +11,7 @@ let writeJson = function(){
     })).fail((data) => {
       console.log('cannot access url');
     })
+  }
 }
 
 let createSendMessage = function(){
