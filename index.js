@@ -9,7 +9,7 @@ const conf = require('config');
 
 // 8080番ポートで待ちうける
 app.listen(conf.port, () => {
-  console.log('Running at Port 8081...');
+  console.log('Running at Port '+conf.port+'...');
 });
 
 // 静的ファイルのルーティング
