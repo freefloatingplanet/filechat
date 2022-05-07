@@ -1,14 +1,14 @@
 const express = require('express');
 const app = express();
-// パス指定用モジュール
 const path = require('path');
 const bodyParser = require('body-parser')
 const fs = require('fs')
 const readline = require('readline')
 const os = require('os');
+const conf = require('config');
 
 // 8080番ポートで待ちうける
-app.listen(8081, () => {
+app.listen(conf.port, () => {
   console.log('Running at Port 8081...');
 });
 
@@ -25,7 +25,7 @@ app.post('/jsonwrite/',(req,res) => {
   const options = {
     flag: 'a'
   };
-  fs.writeFile('./json/chat.json',JSON.stringify(req.body)+os.EOL,options,(err)=>{
+  fs.writeFile(conf.chatfilepath,JSON.stringify(req.body)+os.EOL,options,(err)=>{
     if(err){
       console.log(err);
       throw err;
@@ -38,7 +38,7 @@ app.post('/jsonwrite/',(req,res) => {
 app.post('/jsonread/',(req,res) => {
   console.log(req.body);
   // Streamを準備
-  const stream = fs.createReadStream('./json/chat.json', {
+  const stream = fs.createReadStream(conf.chatfilepath, {
     encoding: "utf8",         // 文字コード
     highWaterMark: 1024       // 一度に取得するbyte数
   });
@@ -65,15 +65,4 @@ app.post('/jsonread/',(req,res) => {
     res.send(retdata);  
   })
 
-});  /*
-  fs.readFile('./json/chat.json','utf8',(err,data) => {
-    if(err){
-      console.log(err);
-      throw err;
-    }
-    forEach
-    console.log(data);
-    res.send(data);
-  })
-  */
-
+});
