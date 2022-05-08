@@ -1,0 +1,3 @@
+Released under the MIT license.
+
+Project Bootstrap is Copyright (c) 2011–2022 the Bootstrap Authors and Twitter, Inc. (https://github.com/twbs/bootstrap).
