@@ -1,5 +1,5 @@
 # filechat
-filechat is available for chat using files on the shared server.
+filechat is available for chat using files on the shared file server.
 
 <img width="1112" alt="スクリーンショット 2022-05-08 22 15 59" src="https://user-images.githubusercontent.com/43333151/167298021-e8d931a8-cb7a-4500-a035-47544802eaa4.png">
 
