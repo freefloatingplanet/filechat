@@ -7,7 +7,6 @@ const readline = require('readline')
 const os = require('os');
 const conf = require('config');
 
-// 8080番ポートで待ちうける
 app.listen(conf.port, () => {
   console.log('Running at Port '+conf.port+'...');
 });

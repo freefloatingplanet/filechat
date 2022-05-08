@@ -7,7 +7,7 @@ let writeJson = function(){
       contentType: 'application/json',
       dataType:"json"
     }).done((data => {
-      console.log(data);
+      ;
     })).fail((data) => {
       console.log('cannot access url');
     })
@@ -31,7 +31,6 @@ let  readJson = function(){
       contentType: 'application/json',
       dataType:"json"
     }).done((data => {
-      console.log(data);
       updateMessage(data);
     })).fail((data) => {
       console.log('cannot access url');
