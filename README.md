@@ -23,8 +23,6 @@ clone the repo
 
 ## Usage
 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
-
 ```bash
 cd [cloned path]
 node index.js
