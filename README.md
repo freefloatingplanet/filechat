@@ -1,17 +1,7 @@
 # filechat
-## Name（リポジトリ/プロジェクト/OSSなどの名前）
+filechat is available for chat using files on the shared server.
 
-分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
-
-"hoge"が何かを簡潔に紹介する
-
-## DEMO
-
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
-
-## Features
-
-"hoge"のセールスポイントや差別化などを説明する
+<img width="1112" alt="スクリーンショット 2022-05-08 22 15 59" src="https://user-images.githubusercontent.com/43333151/167298021-e8d931a8-cb7a-4500-a035-47544802eaa4.png">
 
 ## Requirement
 
@@ -22,10 +12,17 @@ This software is developed under node.js v14.9.0
 clone the repo
 
 ## Usage
-
+### startup
 ```bash
 cd [cloned path]
 node index.js
+```
+### config
+```json
+{
+    "port":8081,
+    "chatfilepath":"./json/chat.json"
+}
 ```
 
 ## Note
