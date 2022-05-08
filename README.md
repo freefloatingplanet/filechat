@@ -48,5 +48,5 @@ python demo.py
 * [twitter](https://twitter.com/__freefloating)
 
 ## License
-Copyright (c) 2022 freefloatingplanet
+Copyright (c) 2022 freefloatingplanet.
 This software is released under the [MIT license](https://en.wikipedia.org/wiki/MIT_License), see LICENSE.txt.
